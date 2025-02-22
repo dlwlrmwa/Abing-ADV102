@@ -35,7 +35,7 @@ export default function Exercise() {
     if (index === 0) {
       navigation.navigate("/login");
     } else if (index === 1) {
-      navigation.navigate("../(information)/contact");
+      navigation.navigate("../Exercise4");
     }
   };
 
