@@ -18,9 +18,9 @@ export default function Exercise() {
     {
       title: "Exercise 4",
       description:
-        "Create register screen<br/>Register screen fields:\n\n<ul><li>Image: Allows user to select image</li><li>Name</li><li>Email</li><li>Password</li></ul>",
+        "Create a stopwatch with two buttons:\nOne for Start/Stop and one for Reset.",
     },
-    { title: "Exercise 5", description: "Sample description rendered HTML 5" },
+    { title: "Exercise 5", description: "Create a register screen and add a title and description to the card in the exercise tab.  \nWhen the card is clicked, it should redirect to the register screen.<ul><li>Image (Image picker when image selected should display the image selected)</li><li>Name (Text Input)</li><li>Email (Text Input)</li><li>Password (Text Input)</li><li>Register (Button)</li></ul>" },
     { title: "Exercise 6", description: "Sample description rendered HTML 6" },
     { title: "Exercise 7", description: "Sample description rendered HTML 7" },
     { title: "Exercise 8", description: "Sample description rendered HTML 8" },
