@@ -21,23 +21,39 @@ export default function Exercise() {
         "Create a stopwatch with two buttons:\nOne for Start/Stop and one for Reset.",
     },
     { title: "Exercise 5", description: "Create a register screen and add a title and description to the card in the exercise tab.  \nWhen the card is clicked, it should redirect to the register screen.<ul><li>Image (Image picker when image selected should display the image selected)</li><li>Name (Text Input)</li><li>Email (Text Input)</li><li>Password (Text Input)</li><li>Register (Button)</li></ul>" },
-    { title: "Exercise 6", description: "Sample description rendered HTML 6" },
+    { title: "Exercise 6", description: "Create a simple CRUD using useContext and useReducer" },
     { title: "Exercise 7", description: "Sample description rendered HTML 7" },
     { title: "Exercise 8", description: "Sample description rendered HTML 8" },
     { title: "Exercise 9", description: "Sample description rendered HTML 9" },
-    {
-      title: "Exercise 10",
-      description: "Sample description rendered HTML 10",
+    { title: "Exercise 10", description: "Sample description rendered HTML 10",
     },
   ];
 
   const handlePress = (index) => {
     if (index === 0) {
-      navigation.navigate("/login");
+      navigation.navigate("login");
     } else if (index === 1) {
-      navigation.navigate("../Exercise4");
+      navigation.navigate("Exercise4");
     }
-  };
+      else if (index === 2) {
+        navigation.navigate("Exercise5");
+      }
+      else if (index === 3) {
+        navigation.navigate("Exercise6");
+      }
+      else if (index === 4) {
+        navigation.navigate("Exercise7");
+      }
+      else if (index === 5) {
+        navigation.navigate("Exercise8");
+      }
+      else if (index === 6) {
+        navigation.navigate("Exercise9");
+      }
+      else if (index === 7) {
+        navigation.navigate("Exercise10");
+      }
+    }
 
   return (
     <ScrollView style={styles.container}>

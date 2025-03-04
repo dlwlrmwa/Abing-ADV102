@@ -31,13 +31,13 @@ export default function Layout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Home", //Home button in main landing page
         }}
       />
       <Tabs.Screen
         name="exercises"
         options={{
-          title: "Exercises",
+          title: "Exercises", //Exercise button in main landing page
         }}
       />
     </Tabs>
