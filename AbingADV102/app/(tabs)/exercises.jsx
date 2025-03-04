@@ -31,7 +31,7 @@ export default function Exercise() {
 
   const handlePress = (index) => {
     if (index === 0) {
-      navigation.navigate("login");
+      navigation.navigate("Exercise3");
     } else if (index === 1) {
       navigation.navigate("Exercise4");
     }
