@@ -39,12 +39,6 @@ function Exercise7({ onBack }) {
     }
   };
 
-  const handlePreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(currentQuestionIndex - 1);
-    }
-  };
-
   const handleAnswer = (selectedAnswer) => {
     const currentQuestion = questions[currentQuestionIndex];
     if (selectedAnswer === currentQuestion.correct_answer) {
@@ -92,15 +86,6 @@ function Exercise7({ onBack }) {
             </button>
           ))}
 
-        <div style={styles.buttonContainer}>
-          <button style={styles.button} onClick={handlePreviousQuestion} disabled={currentQuestionIndex === 0}>
-            Previous
-          </button>
-          <button style={styles.button} onClick={handleNextQuestion} disabled={currentQuestionIndex === questions.length - 1}>
-            Next
-          </button>
-        </div>
-
         {currentQuestionIndex === questions.length - 1 && (
           <div>
             <h3>Your Score: {score} / {questions.length}</h3>
@@ -128,71 +113,74 @@ function Exercise7({ onBack }) {
 }
 
 const styles = {
-  quizContainer: { 
-    textAlign: 'center', 
-    padding: '20px', 
-    maxWidth: '600px', 
-    margin: '0 auto' 
+  quizContainer: {
+    textAlign: 'center',
+    padding: '20px',
+    maxWidth: '600px',
+    margin: '0 auto'
   },
 
-  option: { display: 'block', 
-    width: '100%', 
-    padding: '10px', 
-    margin: '5px', 
-    fontSize: '16px', 
-    cursor: 'pointer', 
-    backgroundColor: '#ffc8dd', 
-    color: '#000', 
-    fontWeight: 'bold', 
-    border: 'none', 
-    borderRadius: '5px' 
+  option: {
+    display: 'block',
+    width: '100%',
+    padding: '10px',
+    margin: '5px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    backgroundColor: '#ffc8dd',
+    color: '#000',
+    fontWeight: 'bold',
+    border: 'none',
+    borderRadius: '5px'
   },
 
-  buttonContainer: { 
-    display: 'flex', 
-    justifyContent: 'center', 
-    marginTop: '20px' 
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '20px'
   },
-  button: { 
-    backgroundColor: '#ff1493' , 
-    color: '#fff', 
-    padding: '10px 20px', 
-    fontSize: '18px', 
-    cursor: 'pointer', 
-    border: 'none', 
-    borderRadius: '5px', 
-    margin: '0 10px' 
+  button: {
+    backgroundColor: '#ff1493',
+    color: '#fff',
+    padding: '10px 20px',
+    fontSize: '18px',
+    cursor: 'pointer',
+    border: 'none',
+    borderRadius: '5px',
+    margin: '0 10px'
   },
-  backButton: { 
-    backgroundColor: '#ff1493', 
-    color: '#fff', 
-    padding: '10px 20px', 
-    fontSize: '18px', 
-    cursor: 'pointer', 
-    border: 'none', 
-    borderRadius: '5px', 
-    marginTop: '20px' 
+  backButton: {
+    backgroundColor: '#ff1493',
+    color: '#fff',
+    padding: '10px 20px',
+    fontSize: '18px',
+    cursor: 'pointer',
+    border: 'none',
+    borderRadius: '5px',
+    marginTop: '20px'
   },
-  input: { 
-    padding: '10px', 
-    fontSize: '16px', 
-    marginBottom: '20px', 
-    borderRadius: '8px', 
-    border: '1px solid #ccc' 
+  input: {
+    padding: '10px',
+    fontSize: '16px',
+    marginBottom: '20px',
+    borderRadius: '8px',
+    border: '1px solid #ccc'
   },
-  loadingContainer: { 
-    textAlign: 'center', 
-    marginTop: '50px' 
+  loadingContainer: {
+    textAlign: 'center',
+    marginTop: '50px'
   },
-  spinner: { 
-    margin: '20px auto', 
-    border: '6px solidrgb(163, 38, 121)', 
-    borderTop: '6px solidrgb(240, 64, 123)', 
-    borderRadius: '50%', 
-    width: '40px', 
-    height: '40px', 
-    animation: 'spin 1s linear infinite' 
+  spinner: {
+    margin: '20px auto',
+    border: '6px solidrgb(163, 38, 121)',
+    borderTop: '6px solidrgb(240, 64, 123)',
+    borderRadius: '50%',
+    width: '40px',
+    height: '40px',
+    animation: 'spin 1s linear infinite'
   },
 };
 
-export default Exercise7;
+export default Exercise7; 
+
+// wala pa nahuman, need pa ayuson ang scoring

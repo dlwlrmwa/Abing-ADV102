@@ -1,21 +1,39 @@
 import { View, Text, StyleSheet } from "react-native";
+import { Link } from "expo-router";
 
 export default function Home() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.author}>Eliza Marie Abing</Text>
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <View style={styles.linksContainer}>
+                <Link href="/about" style={styles.linkText}>About</Link>
+                <Link href="/contact" style={styles.linkText}>Contact</Link>
+            </View>
+            <Text style={styles.nameText}>Eliza Marie M. Abing</Text>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 50,
-    alignItems: "center", 
-  },
-  author: {
-    marginStart: 20,
-    fontSize: 50,
-    fontWeight: "bold",
-  },
+    container: {
+        flex: 1,
+        backgroundColor: 'purple',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    linksContainer: {
+        position: 'absolute',
+        top: 40,
+        flexDirection: 'row',
+        gap: 20,
+    },
+    linkText: {
+        color: 'gold',
+        fontSize: 18,
+    },
+    nameText: {
+        fontSize: 36,
+        fontWeight: 'bold',
+        color: 'pink',
+        textAlign: 'center',
+    },
 });
