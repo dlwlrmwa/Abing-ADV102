@@ -22,7 +22,7 @@ export default function Exercise() {
     },
     { title: "Exercise 5", description: "Create a register screen and add a title and description to the card in the exercise tab.  \nWhen the card is clicked, it should redirect to the register screen.<ul><li>Image (Image picker when image selected should display the image selected)</li><li>Name (Text Input)</li><li>Email (Text Input)</li><li>Password (Text Input)</li><li>Register (Button)</li></ul>" },
     { title: "Exercise 6", description: "Create a simple CRUD using useContext and useReducer" },
-    { title: "Exercise 7", description: "Sample description rendered HTML 7" },
+    { title: "Exercise 7", description: "Create a simple quiz using the API from Open Trivia Database. The user should be able to input the number of \nquestions they want to answer, with a minimum of 10 and a maximum of 30. The UI will also be considered in \ngrading this exercise. After completing the quiz, the user's score should be displayed as score/total questions. \n\nUser Interface: 40% \nFunctionality: 60%" },
     { title: "Exercise 8", description: "Sample description rendered HTML 8" },
     { title: "Exercise 9", description: "Sample description rendered HTML 9" },
     { title: "Exercise 10", description: "Sample description rendered HTML 10",
