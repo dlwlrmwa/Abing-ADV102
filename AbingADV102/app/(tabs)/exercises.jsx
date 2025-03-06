@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import HTMLView from "react-native-htmlview";
 
+
 export default function Exercise() {
   const exercises = [
     {
@@ -31,18 +32,18 @@ export default function Exercise() {
 
   const handlePress = (index) => {
     if (index === 0) {
-      navigation.navigate("Exercise3");
+      navigation.navigate("Exercise3/Login");
     } else if (index === 1) {
-      navigation.navigate("Exercise4");
+      navigation.navigate("Exercise4/Stopwatch");
     }
       else if (index === 2) {
-        navigation.navigate("Exercise5");
+        navigation.navigate("Exercise5/Register");
       }
       else if (index === 3) {
-        navigation.navigate("Exercise6");
+        navigation.navigate("Exercise6/CRUD");
       }
       else if (index === 4) {
-        navigation.navigate("Exercise7");
+        navigation.navigate("Exercise7/QuizAPI");
       }
       else if (index === 5) {
         navigation.navigate("Exercise8");
